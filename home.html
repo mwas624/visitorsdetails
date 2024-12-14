@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">Visitor Information Form</div>
+        <div class="card-body">
+            <form method="POST" action="/submit">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="tag_no">Tag No:</label>
+                    <input type="text" id="tag_no" name="tag_no" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="vehicle_reg_no">Motor Vehicle Registration No:</label>
+                    <input type="text" id="vehicle_reg_no" name="vehicle_reg_no" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="id_no">ID Number:</label>
+                    <input type="text" id="id_no" name="id_no" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="time_in">Time In:</label>
+                    <input type="time" name="time_in" id="time_in" required>
+                </div>
+                <div class="form-group">
+                    <label for="time_out ">Time out:</label>
+                    <input type="time" name="time_out" id="time_out" required>
+                </div>
+                <div class="form-group">
+                    <label for="visiting_office">Visiting Office:</label>
+                    <input type="text" id="visiting_office" name="visiting_office" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="signature">Signature:</label>
+                    <input type="text" id="signature" name="signature" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
